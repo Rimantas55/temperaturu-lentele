@@ -15,7 +15,7 @@
 <body>
 	<div class="container">
 		<h1 class="bg-info text-light p-3">TempFeel</h1> <br />
-		<a href="test.php" target="_blank">Test </a>
+		<a href="teperatura_lentele.php" target="_blank">Back to Original </a>
 		<div class="row"> 
 			<div class="col">
 				<table class="table table-dark">
@@ -26,11 +26,15 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php 
-							foreach ($temperatures as $t) {
-								echo "<tr class='". $t['style'] . "'><td>" . $t['value'] .  "</td><td>". $t['feel'] . "</td></tr>";
-							}
-						?>
+						<?php for ($temp=$t_from; $temp < $t_to; $temp++) { ?> 
+							<tr> 
+								<td><?= $temp?></td>
+								<td><?= getFeel($temp);?></td>
+
+						</tr>
+							
+							
+						<?php 	} ?>
 					</tbody>
 				</table>
 			</div>

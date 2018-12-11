@@ -10,7 +10,7 @@ function getFeel($t) {
 		return "vėsu";
 	}
 }
-$temperatures = [];
+//$temperatures = [];
 for ($temp=$t_from; $temp < $t_to; $temp++) { 
 	$temperatures[] = [
 		'value' => $temp,
@@ -18,3 +18,4 @@ for ($temp=$t_from; $temp < $t_to; $temp++) {
 		'style' => (getFeel($temp) == "karšta") ? "bg-danger" : "bg-success" 
 	];
 }
+
