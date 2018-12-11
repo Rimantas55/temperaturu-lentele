@@ -1,4 +1,4 @@
-<?php include('functions.php'); ?>
+<?php include('functions2.php'); ?>
 
 <!doctype html>
 <html lang="en">
@@ -9,13 +9,15 @@
 
 	<!-- Bootstrap CSS scope="col"-->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 
 	<title>TempFeel</title>
 </head>
 <body>
 	<div class="container">
 		<h1 class="bg-info text-light p-3">TempFeel</h1> <br />
-		<a href="teperatura_lentele.php" target="_blank">Back to Original </a>
+		<a href="temperatura_lentele.php" target="_blank">Back to Original </a>
 		<div class="row"> 
 			<div class="col">
 				<table class="table table-dark">
@@ -28,12 +30,10 @@
 					<tbody>
 						<?php for ($temp=$t_from; $temp < $t_to; $temp++) { ?> 
 							<tr> 
-								<td><?= $temp?></td>
-								<td><?= getFeel($temp);?></td>
+								<td ><?= $temp ;?></td>
+								<td><?= getFeel($temp) ;?></td>
 
-						</tr>
-							
-							
+							</tr>
 						<?php 	} ?>
 					</tbody>
 				</table>
