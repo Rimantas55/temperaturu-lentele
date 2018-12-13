@@ -28,13 +28,16 @@
 						</tr>
 					</thead>
 					<tbody>
-						<?php for ($temp=$t_from; $temp < $t_to; $temp++) { ?> 
-							<tr> 
-								<td ><?= $temp ;?></td>
-								<td><?= getFeel($temp) ;?></td>
 
+						<?php for ($temp=$t_from; $temp < $t_to; $temp++) { ?> 
+
+							<tr>  
+								<td><?= $temp?> </td>
+								<td><?= getFeel($temp);?> </td>
 							</tr>
-						<?php 	} ?>
+							
+						<?php 	} ?> 
+					
 					</tbody>
 				</table>
 			</div>

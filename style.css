@@ -1,7 +1,9 @@
 body {
-	background-color: yellow;
+	background-color: lightgrey;
 }
 
-/*.color {
-	background-color: red;
-}*/
+a {
+	font-size: 25px;
+
+}
+

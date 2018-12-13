@@ -16,7 +16,7 @@
 <body>
 	<div class="container">
 		<h1 class="bg-info text-light p-3">TempFeel</h1> <br />
-		<a href="test.php" target="_blank">Test </a>
+		<a href="test.php" target="_blank"> Link to - Test </a>
 		<div class="row"> 
 			<div class="col">
 				<table class="table table-dark">
@@ -32,6 +32,8 @@
 								echo "<tr class='". $t['style'] . "'><td>" . $t['value'] .  "</td><td>". $t['feel'] . "</td></tr>";
 							}
 						?>
+
+
 					</tbody>
 				</table>
 			</div>

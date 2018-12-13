@@ -5,24 +5,24 @@ $t_to = 40;
 function getFeel($t) {
 	
 	if ($t > 30) {
-		return "karšta"; 
+		return "HOT"; 
 	} else if ($t >= 15) {
-		return "šilta"; 
+		return "WARM"; 
 	} else if ($t >= 5 && $t <= 14) {
 		return "vėsu"; 
 	} else if ($t < 5) {
-		return "Salta"; 
+		return "COLD"; 
 	}
 }
 
 
-//sita funkcija tikriausiai nera butina jau
+
 //$temperatures = [];
 for ($temp=$t_from; $temp < $t_to; $temp++) { 
 	$temperatures[] = [
 		'value' => $temp,
 		'feel' => getFeel($temp),
-		'style' => (getFeel($temp) == "karšta") ? "bg-danger" : "bg-success" 
+		'style' => (getFeel($temp) == "HOT") ? "bg-danger" : "bg-success" 
 	];
 }
 
