@@ -17,6 +17,7 @@ function getFeel($t) {
 
 
 
+
 //$temperatures = [];
 for ($temp=$t_from; $temp < $t_to; $temp++) { 
 	$temperatures[] = [

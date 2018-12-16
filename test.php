@@ -28,20 +28,25 @@
 						</tr>
 					</thead>
 					<tbody>
-
-						<?php for ($temp=$t_from; $temp < $t_to; $temp++) { ?> 
-
-							<tr>  
-								<td><?= $temp?> </td>
-								<td><?= getFeel($temp);?> </td>
-							</tr>
+						<?php for ($temp = $t_from; $temp < $t_to; $temp++) { ?> 
 							
-						<?php 	} ?> 
-					
+ 							<?php 
+ 							
+								// $ats = getFeel($temp);
+								// echo '<tr class="' . $ats['class'] . '">';
+								// 	echo '<td>' . $temp . '</td>';
+								// 	echo '<td>' .  $ats['feeling'] . '</td>';
+								// echo '</tr>';
+								echo getFeel2($temp);
+						}
+
+						?> 
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
+
+
 </body>
 </html>
