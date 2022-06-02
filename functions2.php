@@ -26,7 +26,7 @@ $t_to = 41;
 // }
 
 
-//antras kodo variantas
+//antras kodo variantas 
 
 function getfeel2($t){
 	if ($t >= 30) {

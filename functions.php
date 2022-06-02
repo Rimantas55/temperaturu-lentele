@@ -1,4 +1,4 @@
-<?php
+<?php 
 $t_from = 0;
 $t_to = 40;
 
@@ -18,12 +18,12 @@ function getFeel($t) {
 
 
 
-//$temperatures = [];
+//$temperatures = []; 
 for ($temp=$t_from; $temp < $t_to; $temp++) { 
 	$temperatures[] = [
 		'value' => $temp,
 		'feel' => getFeel($temp),
-		'style' => (getFeel($temp) == "HOT") ? "bg-danger" : "bg-success" 
+		'style' => (getFeel($temp) == "HOT") ? "bg-danger" : "bg-success"  
 	];
 }
 
